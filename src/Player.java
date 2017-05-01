@@ -64,15 +64,8 @@ public class Player implements Serializable
      */
     public void setBall(Ball ball)
     {
-        /*
-            beyler burayı biraz değiştirelim
-            ballindex yerine currentball falan olabilir mesela
-            bir de yazıcağımız ekstra bir class var sonuçta oyundaki ball'larla ilgili
-            ona göre de burası değişebilir yani
-         */
-        //if(balls.contains(ball)) ballIndex = balls.indexOf(ball);
-        //if(balls.contains(ball)) currentBall = ball;
-        if(ball.isOwned)
+        if(ball.isOwned) currentBall = ball;
+        if(!balls.contains(ball)) balls.add(ball);
     }
 
     /**
@@ -132,6 +125,5 @@ public class Player implements Serializable
     {
         return name;
     }
-
 
 }
