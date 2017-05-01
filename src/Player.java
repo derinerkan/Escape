@@ -28,7 +28,7 @@ public class Player implements Serializable
         highScore = 0;
         money = new VirtualMoney();
         name = "";
-        currentBall = null;
+        currentBall = new Ball();
         //ballIndex = 0;
         balls = new ArrayList<Ball>();
         isPlaying = true;
