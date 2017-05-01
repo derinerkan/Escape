@@ -28,7 +28,8 @@ public class Player implements Serializable
         highScore = 0;
         money = new VirtualMoney();
         name = "";
-        ballIndex = 0;
+        currentBall = null;
+        //ballIndex = 0;
         balls = new ArrayList<Ball>();
         isPlaying = true;
     }
@@ -43,7 +44,8 @@ public class Player implements Serializable
         this.highScore = p.highScore;
         this.money = p.money;
         this.name = p.name;
-        this.ballIndex = p.ballIndex;
+        this.currentBall = p.currentBall;
+        //this.ballIndex = p.ballIndex;
         this.balls = p.balls;
         this.isPlaying = p.isPlaying;
     }
