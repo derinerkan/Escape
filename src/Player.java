@@ -10,7 +10,7 @@ public class Player implements Serializable
 {
     private double score;
     private double highScore;
-    private VirtualMoney money;
+    protected VirtualMoney money;
     private String name;
     private int ballIndex;
     private ArrayList<Ball> balls;
@@ -69,6 +69,7 @@ public class Player implements Serializable
             ona göre de burası değişebilir yani
          */
         if(balls.contains(ball)) ballIndex = balls.indexOf(ball);
+
     }
 
     /**
@@ -127,4 +128,6 @@ public class Player implements Serializable
     {
         return name;
     }
+
+
 }

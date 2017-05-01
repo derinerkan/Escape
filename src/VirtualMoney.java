@@ -33,4 +33,13 @@ public class VirtualMoney
     {
         this.amount -= amount;
     }
+
+    /**
+     * Get the amount of money in this wallet
+     * @return the amount
+     */
+    public int getMoney()
+    {
+        return amount;
+    }
 }
