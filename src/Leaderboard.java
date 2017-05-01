@@ -10,6 +10,7 @@ public class Leaderboard
     }
     /**
      * It adds the player to the leaderboard list with the correct place the user belongs.
+     * @param toAdd the player to add
      */
     public void addPlayer(Player toAdd)
     {
@@ -42,11 +43,18 @@ public class Leaderboard
     }
     /**
      * Checks if it can add the player to leaderboard.
+     * @param toAdd the player to add
+     * @return true if the player can be added
      */
     public boolean canAdd(Player toAdd)
     {
         return toAdd.getScore() > list.get(list.size() - 1).getScore();
     }
+
+    /**
+     * Returns an ArrayList<String of players on the leaderboard
+     * @return the players on the list
+     */
     public ArrayList<String> printMethod()
     {
         ArrayList<String> output = new ArrayList<String>();
