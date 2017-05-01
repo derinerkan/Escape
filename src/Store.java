@@ -1,7 +1,7 @@
 public class Store
 {
-  ArrayList<Ball> balls;
-  Player player;
+  private final ArrayList<Ball> balls;
+  private Player player;
   
   public Store()
   {
@@ -14,11 +14,11 @@ public class Store
    */
   public boolean buyBall(int index)
   {
-    if(balls.get(index).isOwned == false && player.getMoney() > balls.get(index).getPrice())
+    if(balls.get(index).isOwned == false && player.money.getMoney() > balls.get(index).getPrice())
     {
       balls.get(index).isOwned = true;
-      player.getMoney().spendMoney(balls.get(index).getPrice());
-      player.equipBall(index);
+      player.money.spendMoney(balls.get(index).getPrice());
+      player.setBall(balls.get(index));
       return true;
     }
     else

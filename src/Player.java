@@ -59,6 +59,23 @@ public class Player implements Serializable
     }
 
     /**
+     * Returns the score of this player
+     * @return their score
+     */
+    public double getScore()
+    {
+        return score;
+    }
+
+    /**
+     * Returns the high score of this player
+     * @return their high score
+     */
+    public double getHighScore()
+    {
+        return highScore;
+    }
+    /**
      * Try to set the current Ball of this player
      * @param ball the new Ball to set
      */
