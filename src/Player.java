@@ -12,9 +12,11 @@ public class Player implements Serializable
     private double highScore;
     protected VirtualMoney money;
     private String name;
-    private int ballIndex;
+    //private int ballIndex;
     private ArrayList<Ball> balls;
     private boolean isPlaying;
+
+    private Ball currentBall;
 
     /**
      * Default constructor: initializes an empty Player that should be set with other methods.
@@ -68,8 +70,9 @@ public class Player implements Serializable
             bir de yazıcağımız ekstra bir class var sonuçta oyundaki ball'larla ilgili
             ona göre de burası değişebilir yani
          */
-        if(balls.contains(ball)) ballIndex = balls.indexOf(ball);
-
+        //if(balls.contains(ball)) ballIndex = balls.indexOf(ball);
+        //if(balls.contains(ball)) currentBall = ball;
+        if(ball.isOwned)
     }
 
     /**
@@ -78,7 +81,8 @@ public class Player implements Serializable
      */
     public Ball currentBall() //beyler umlde burası yanlış olmuş ball return etmesi daha mantıklı
     {
-        return balls.get(ballIndex); //burda current ball da verebiliriz öyle yapacaksak
+        //return balls.get(ballIndex); //burda current ball da verebiliriz öyle yapacaksak
+        return currentBall;
     }
 
     /**
