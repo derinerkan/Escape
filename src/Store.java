@@ -1,3 +1,8 @@
+/**
+ * Store class for Escape game
+ * @author Escape
+ * @version 1.0
+ */
 public class Store
 {
     private final ArrayList<Ball> balls;

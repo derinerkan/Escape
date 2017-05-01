@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.io.Serializable;
 
 /**
- * Player class for Escape
- * @author Derin Erkan
- * @version 2017-05-01
+ * Player class for Escape game
+ * @author Escape
+ * @version 1.0
  */
 public class Player implements Serializable
 {

@@ -1,7 +1,7 @@
 /**
- * Virtual Money class for Escape project
- * @author Derin Erkan
- * @version 2017-04-30
+ * Virtual Money class for Escape game
+ * @author Escape
+ * @version 1.0
  */
 public class VirtualMoney
 {
