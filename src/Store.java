@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 /**
  * Store class for Escape game
  * @author Escape
